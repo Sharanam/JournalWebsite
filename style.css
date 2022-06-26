@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+nav * {
+    margin: 0;
+}
+
+
+/* common classes */
+
+.flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.f-sbtwn {
+    justify-content: space-between;
+}
+
+.f-right {
+    justify-content: right;
+}
+
+
+/* specific styles */
+
+nav {
+    display: flex;
+    width: 100vw;
+    padding: 0.5rem;
+    background-color: lightyellow;
+    align-items: center;
+    gap: 0.5em;
+}
+
+nav>h1 {
+    flex-grow: 1;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+footer {
+    display: flex;
+    width: 100vw;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+div.button,
+input[type='submit'] {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input[type='submit'] {
+    background-color: blue;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+
+form {
+    margin: 2rem auto;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 1rem;
+    width: clamp(300px, 450px, 40vw);
+    flex-direction: column;
+}
+
+form>div.center {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="date"],
+input[type='password'] {
+    width: 80%;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: 0;
+}
